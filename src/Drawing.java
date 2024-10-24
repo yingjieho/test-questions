@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 public class Drawing {
     public String[] colours;
@@ -15,7 +18,9 @@ public class Drawing {
         this.shapes = shapes;
     }
     public List<Art > mix() {
-        throw new UnsupportedOperationException("Waiting to be implemented");
+        List<String> colours = Arrays.asList(colours);
+        List<String> shapes = Arrays.asList(shapes);
+        return Collections.emptyList();
     }
     public static void main(String[] args) {
         Drawing draw = new Drawing (new String[]{
