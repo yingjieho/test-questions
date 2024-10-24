@@ -1,0 +1,11 @@
+Q: If you use the same  PreAuthorize  configuration on  each method in a class, how can you
+make the annotations cleaner?
+
+A: @PreAuthorize checks for the value before calling the method it is annotated at.
+ To make configuring the @PreAuthorize annotations cleaner, the annotation can be annotated at class level
+ instead of method level.
+
+ Example:
+ @Service
+ @PreAuthorize
+ Public class Service {}
